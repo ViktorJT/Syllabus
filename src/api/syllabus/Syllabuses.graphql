@@ -1,6 +1,7 @@
 type Syllabus {
   _id: ID!
   name: String!
+  description: String
   # lessons: [Lesson]
 }
 
@@ -12,6 +13,7 @@ type Syllabus {
 input SyllabusInput {
   _id: ID
   name: String!
+  description: String
 }
 
 type Mutation {

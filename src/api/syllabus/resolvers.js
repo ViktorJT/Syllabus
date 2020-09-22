@@ -1,10 +1,10 @@
-import Syllabus from './syllabus';
+import Syllabuses from './syllabuses';
 
 export const syllabusResolvers = {
   Query: {
     async syllabus() {
       try {
-        const syllabus = await Syllabus.find();
+        const syllabus = await Syllabuses.find();
         return syllabus;
       } catch (error) {
         console.error('error', error);

@@ -1,29 +1,16 @@
 import {useQuery} from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-// import '../styles';
-
 import {withApollo} from '../lib/apollo';
 import Layout from '../components/Layout';
-// import HabitList from '../components/HabitList';
-// import HabitForm from '../components/HabitForm';
-
-// const HELLO_QUERY = gql`
-//   query HelloQuery {
-//     sayHello
-//   }
-// `;
+import SyllabusForm from '../components/SyllabusForm';
 
 const Home = () => {
-  // const {data, loading, error} = useQuery(HELLO_QUERY);
   // if (loading) return <div />;
   return (
     <Layout>
       <div className="hero">
         <h1 className="title">Helooooooo</h1>
-        {/* <div className="list">
-          <HabitForm />
-          <HabitList />
-        </div> */}
+        <SyllabusForm />
       </div>
 
       <style jsx>{`
