@@ -1,0 +1,23 @@
+type Syllabus {
+  _id: ID!
+  name: String!
+  # lessons: [Lesson]
+}
+
+# type Lesson {
+#   _id: ID!
+#   url: String
+# }
+
+input SyllabusInput {
+  _id: ID
+  name: String!
+}
+
+type Mutation {
+  addSyllabus(syllabus: SyllabusInput): Syllabus
+}
+
+type Query {
+  syllabus: [Syllabus]
+}
