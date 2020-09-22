@@ -1,16 +1,20 @@
 import {useQuery} from '@apollo/react-hooks';
 import gql from 'graphql-tag';
+
 import {withApollo} from '../lib/apollo';
 import Layout from '../components/Layout';
-// import SyllabusForm from '../components/SyllabusForm';
+import CourseList from '../components/CourseList';
+import CourseForm from '../components/CourseForm';
 
 const Home = () => {
-  // if (loading) return <div />;
   return (
     <Layout>
       <div className="hero">
-        <h1 className="title">Helooooooo</h1>
-        {/* <SyllabusForm /> */}
+        <h1 className="title">Course Title</h1>
+        <div className="list">
+          <CourseForm />
+          <CourseList />
+        </div>
       </div>
 
       <style jsx>{`

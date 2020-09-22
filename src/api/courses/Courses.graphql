@@ -2,7 +2,10 @@ scalar Date
 
 type Course {
   _id: ID!
-  name: String!
+  name: String
+  # # ! DEBUGGING
+  # test: String
+  # # ! DEBUGGING
   lessons: [Lesson]
 }
 
@@ -14,6 +17,9 @@ type Lesson {
 input CourseInput {
   _id: ID
   name: String!
+  # # ! DEBUGGING
+  # test: String
+  # # ! DEBUGGING
 }
 
 type Mutation {

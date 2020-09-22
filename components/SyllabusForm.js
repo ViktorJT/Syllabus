@@ -3,7 +3,7 @@
 // import {useForm} from 'react-hook-form';
 
 // // const ADD_SYLLABUS = gql`
-// //   mutation addHabit($syllabus: SyllabusInput) {
+// //   mutation addCourse($syllabus: SyllabusInput) {
 // //     addSyllabus(syllabus: $syllabus) {
 // //       _id
 // //       name
@@ -42,7 +42,7 @@
 //     //     });
 //     //   }}
 //     // >
-//     //   <Field>Habit</Field>
+//     //   <Field>Course</Field>
 //     // </Form>
 //   );
 // };

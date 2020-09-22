@@ -14,6 +14,12 @@ export const CourseSchema = new Schema({
     type: String,
     required: true,
   },
+  // // ! DEBUGGING
+  // test: {
+  //   type: String,
+  //   default: 'testing testing',
+  // },
+  // // ! DEBUGGING
   lessons: [LessonSchema],
 });
 
