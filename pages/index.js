@@ -2,7 +2,7 @@ import {useQuery} from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 import {withApollo} from '../lib/apollo';
 import Layout from '../components/Layout';
-import SyllabusForm from '../components/SyllabusForm';
+// import SyllabusForm from '../components/SyllabusForm';
 
 const Home = () => {
   // if (loading) return <div />;
@@ -10,7 +10,7 @@ const Home = () => {
     <Layout>
       <div className="hero">
         <h1 className="title">Helooooooo</h1>
-        <SyllabusForm />
+        {/* <SyllabusForm /> */}
       </div>
 
       <style jsx>{`

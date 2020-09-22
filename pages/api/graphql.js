@@ -1,13 +1,13 @@
-import {ApolloServer} from 'apollo-server-micro';
+import {ApolloServer, gql} from 'apollo-server-micro';
 import {mergeResolvers, mergeTypeDefs} from 'graphql-tools';
 import connectDb from '../../lib/mongoose';
-import {syllabusResolvers} from '../../src/api/syllabus/resolvers';
-import {syllabusMutations} from '../../src/api/syllabus/mutations';
-import Syllabus from '../../src/api/syllabus/Syllabus.graphql';
+import {coursesResolvers} from '../../src/api/courses/resolvers';
+import {coursesMutations} from '../../src/api/courses/mutations';
+import Courses from '../../src/api/courses/Courses.graphql';
 
-const resolvers = mergeResolvers([syllabusResolvers, syllabusMutations]);
+const resolvers = mergeResolvers([coursesResolvers, coursesMutations]);
 
-const typeDefs = mergeTypeDefs([Syllabus]);
+const typeDefs = mergeTypeDefs([Courses]);
 
 const apolloServer = new ApolloServer({typeDefs, resolvers});
 

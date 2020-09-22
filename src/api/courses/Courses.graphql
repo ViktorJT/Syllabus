@@ -1,0 +1,27 @@
+scalar Date
+
+type Course {
+  _id: ID!
+  name: String!
+  lessons: [Lesson]
+}
+
+type Lesson {
+  _id: ID!
+  date: Date
+}
+
+input CourseInput {
+  _id: ID
+  name: String!
+}
+
+type Mutation {
+  addCourse(course: CourseInput): Course
+  addLesson(courseId: ID, date: Date): Course
+  removeLesson(courseId: ID, lessonId: ID): Course
+}
+
+type Query {
+  courses: [Course]
+}
