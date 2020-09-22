@@ -1,0 +1,27 @@
+type Syllabus {
+  _id: ID
+  name: String
+  # description: String
+  # lessons: [Lesson]
+}
+
+type Lesson {
+  _id: ID
+  url: String
+}
+
+input SyllabusInput {
+  _id: ID
+  name: String
+  # description: String
+}
+
+# ! DOUBLE CHECK THIS, WHAT IS THE 'syllabus: ' part before the Syllabusinput?
+
+type Mutation {
+  addSyllabus(syllabus: SyllabusInput): Syllabus
+}
+
+type Query {
+  syllabus: [Syllabus]
+}

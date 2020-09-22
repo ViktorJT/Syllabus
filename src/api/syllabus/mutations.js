@@ -1,11 +1,11 @@
-import Syllabuses from './syllabuses';
+import Syllabus from './syllabus';
 
 export const syllabusMutations = {
   Mutation: {
     // ADD CONTEXT & AUTH LATER
     async addSyllabus(_, {syllabus}) {
       try {
-        const newSyllabus = await Syllabuses.create({
+        const newSyllabus = await Syllabus.create({
           ...syllabus,
         });
         return newSyllabus;
