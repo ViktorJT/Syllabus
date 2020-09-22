@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="hero">
-        <h1 className="title">Testtesttest</h1>
+        <h1 className="title">Helooooooo</h1>
         {/* <div className="list">
           <HabitForm />
           <HabitList />
